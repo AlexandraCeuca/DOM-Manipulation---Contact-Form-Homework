@@ -2,10 +2,7 @@
     padding: 0px;
     margin: 0px;
 }
-.mainContainer {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid black;
+#pageContent{
     width: 900px;
     height: 410px;
     position: absolute;
@@ -16,17 +13,34 @@
     margin: auto;
     max-width: 100%;
     max-height: 100%;
+}
+#banner {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgreen;
+    color: green;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+#confirmationContainer {
+    display: flex;
+    flex-direction: row;
+}
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
     overflow: auto;
 }
-form {
+#submitForm {
     margin: 30px 60px 30px 30px;
     padding: 0px 0px 0px 50px;
 }
-form #textSection:first-child input {
+#submitForm #textSection:first-child input {
     display: block;
     margin-bottom: 30px;
     width: 370px;
-    color: rgb(175, 179, 176);
     border: 1.1px solid black;
     padding-left: 5px;
     height: 20px;;
@@ -44,7 +58,7 @@ form #textSection:first-child input {
     justify-content: flex-end;
     margin-top:30px;
 }
-#submitButtonContainer input[type=submit] {
+#submitButtonContainer button {
     height: 30px;
     width: 70px;
     color:white;
@@ -59,4 +73,25 @@ form #textSection:first-child input {
 }
 #textareaField {
     padding: 5px;
+}
+.invalidInput {
+    border: 1px solid red !important;
+}
+
+#confimationSvg {
+    display: block;
+    content:"";
+    background-image: url("./Photos/icons8-checked.svg");
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+#confimationBanneClose {
+    display: block;
+    content:"";
+    background-image: url("./Photos/iconfinder_Close_1031533.svg");
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
 }
