@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    width: 900px;
+    height: 410px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+form {
+    margin: 30px 60px 30px 30px;
+    padding: 0px 0px 0px 50px;
+}
+form #textSection:first-child input {
+    display: block;
+    margin-bottom: 30px;
+    width: 370px;
+    color: rgb(175, 179, 176);
+    border: 1.1px solid black;
+    padding-left: 5px;
+    height: 20px;;
+}
+#genderSection {
+    margin-bottom: 20px;
+}
+#genderSection input[type="radio"]{
+    margin-left: 65px;
+    cursor: pointer;
+    background-color: black;
+}
+#submitButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px;
+}
+#submitButtonContainer input[type=submit] {
+    height: 30px;
+    width: 70px;
+    color:white;
+    background-color: rgb(19 154 183);
+    border-radius: 10%;
+    border: 1px solid black;
+}
+#imgContainer img{
+    height: 370px;
+    width: 330px;
+    margin:20px;
+}
+#textareaField {
+    padding: 5px;
+}
