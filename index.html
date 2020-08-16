@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <form>
+            <div id="textSection">
+                <label for="fname"> </label>
+                <input type="text" id="fname" name="fname" value="First Name">
+                <label for="lname"> </label>
+                <input type="text" id="lname" name="lname" value="Last Name">
+            </div>  
+
+            <div id="genderSection">
+                <header>Gender</header>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">M</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">F</label><br>
+            </div>
+            <div>
+                <textarea id="textareaField" name="textareaField" rows="7" cols="50">Your message here...</textarea>
+            </div>
+            <div id="submitButtonContainer"> 
+                <input type="submit" value="Submit">
+            </div>
+        </form> 
+
+        <div id="imgContainer">
+            <img src="./Photos/Capture.JPG" />
+        </div>
+
+    </div>
+ 
+    
+    <scrpt type="text/javascript" src="validaion.js"></scrpt>
+</body>
+</html>
