@@ -29,9 +29,15 @@ submit.addEventListener("click", function() {
     }
 
     if (formValid) {
-        const confirmationText = document.getElementById("confirmationText");
-        confirmationText.style.visibility = "visible";
-        confirmationText.innerText = "Thank you for contacting us, " + firstName.value;
+        const confirmationBanner = document.getElementById("banner");
+        confirmationBanner.style.visibility = "visible";
+        const confimationText = document.getElementById("confirmationText");
+        confimationText.innerText = "Thank you for contacting us, " + firstName.value;
+
+        const closeBannerButton= document.getElementById("confimationBanneClose");
+        closeBannerButton.addEventListener("click", function() {
+            confirmationBanner.style.visibility = "hidden";
+        });
     }
 });
 
