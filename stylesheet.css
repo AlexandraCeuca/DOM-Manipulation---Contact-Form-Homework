@@ -17,11 +17,12 @@
 #banner {
     display: flex;
     flex-direction: row;
-    background-color: lightgreen;
-    color: green;
+    background-color: rgb(224 239 218);
+    color: rgb(92 119 86);
     padding: 8px 16px;
     margin-bottom: 8px;
     justify-content: space-between;
+    visibility: hidden;
 }
 #confirmationContainer {
     display: flex;
@@ -76,6 +77,9 @@
 }
 .invalidInput {
     border: 1px solid red !important;
+}
+.invalidInput:focus {
+    outline-color: red;
 }
 
 #confimationSvg {
